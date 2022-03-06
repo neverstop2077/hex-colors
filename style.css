@@ -27,11 +27,15 @@ body{
     text-align: center;
 }
 .hex-color h1{
-    margin-bottom: 15%;
+    margin-bottom: 10%;
     text-transform: uppercase;
 }
 
-.hex-color h1, h2{
+.hex-color h2{
+    margin-bottom: 5%;
+}
+
+.hex-color h1, h2, .heading-contact, .socials-icon{
     font-size: 2rem;
     animation: changecolor 5s infinite alternate;
 }
@@ -41,6 +45,26 @@ body{
     background-color: #e2e6ea;
     border-color: #dae0e5;
 }
+
+.contact{
+    margin-top: 15%;
+    
+}
+
+.socials{
+    margin-top: 15%;
+}
+
+.socials-detail{
+    text-decoration: none;
+}
+
+.socials-icon{
+    color: #212529 !important;
+    margin: 0 4px;
+    padding: 5px;
+}
+
 
 @keyframes changecolor{
     0% {
@@ -64,7 +88,12 @@ body{
 }
 
 @media (max-width: 480px) {
-    .hex-color h1,h2{
+    .hex-color h1,h2, .heading-contact{
         font-size: 1.5rem;
+    }   
+    .socials-icon{
+        font-size: 2.4rem;
+        padding-left: 4px;
+        padding-right: 4px;
     }
 }
